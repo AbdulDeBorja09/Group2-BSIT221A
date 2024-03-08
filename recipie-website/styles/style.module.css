@@ -27,7 +27,36 @@
     color: #06648e;
   }
 }
+.Recipe_category {
+  display: flex;
+  padding: 30px 20px 30px 50px;
+  font-family: "Poppins", sans-serif;
 
+  .title {
+    font-size: 16px;
+    width: 130px;
+    padding-top: 0px;
+  }
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 826px;
+    margin-left: 30px;
+  }
+  .button {
+    border-radius: 15px;
+    padding: 10px;
+    color: #253d4e;
+    background-color: white;
+    font-size: 16px;
+    transition: 0.2s ease;
+    border: 0px;
+  }
+  .button:hover {
+    background-color: #06648e;
+    color: white;
+  }
+}
 .Recipe_box {
   display: flex;
   flex-wrap: wrap;
@@ -52,7 +81,7 @@
     object-fit: cover;
   }
   .recipie_title {
-    font-size: 12.35px;
+    font-size: 12px;
     font-weight: 600;
     margin: 10px 7px;
     text-transform: capitalize;
@@ -133,7 +162,7 @@
       color: white;
       font-size: 14px;
       font-weight: 700;
-      margin-top: 7px;
+      margin-top: 10px;
     }
     .subtitle {
       font-size: 10px;

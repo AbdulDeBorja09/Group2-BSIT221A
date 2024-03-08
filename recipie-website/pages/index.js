@@ -14,6 +14,17 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
+      <section className={styles.Recipe_category}>
+        <h1 className={styles.title}>All Categories:</h1>
+        <div className={styles.buttons}>
+          <button className={styles.button}>Breakfast</button>
+          <button className={styles.button}>Lunch</button>
+          <button className={styles.button}>Dinner</button>
+          <button className={styles.button}>Main-Course</button>
+          <button className={styles.button}>Dessert</button>
+          <button className={styles.button}>Vegetarian Dishes</button>
+        </div>
+      </section>
       <section className={styles.Recipe_box}>
         <a className={styles.box}>
           <img src="/recipeimg.jpg" alt="" />
