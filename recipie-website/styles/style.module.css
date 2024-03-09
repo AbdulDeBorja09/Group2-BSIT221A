@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+/* NAVBAR  */
 .nav {
   display: flex;
   padding: 10px 20px;
@@ -27,73 +28,7 @@
     color: #06648e;
   }
 }
-.Recipe_category {
-  display: flex;
-  padding: 30px 20px 30px 50px;
-  font-family: "Poppins", sans-serif;
-
-  .title {
-    font-size: 16px;
-    width: 130px;
-    padding-top: 0px;
-  }
-  .buttons {
-    display: flex;
-    justify-content: space-between;
-    width: 826px;
-    margin-left: 30px;
-  }
-  .button {
-    border-radius: 15px;
-    padding: 10px;
-    color: #253d4e;
-    background-color: white;
-    font-size: 16px;
-    transition: 0.2s ease;
-    border: 0px;
-  }
-  .button:hover {
-    background-color: #06648e;
-    color: white;
-  }
-}
-.Recipe_box {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 50px 80px;
-  font-family: "Poppins", sans-serif;
-
-  .box {
-    border: 1px solid rgb(238, 238, 238);
-    border-radius: 10px;
-    padding: 5px;
-    margin-bottom: 40px;
-    max-width: 191px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    text-decoration: none;
-    cursor: pointer;
-  }
-  .box img {
-    width: 180px;
-    height: 123px;
-    border-radius: 10px;
-    object-fit: cover;
-  }
-  .recipie_title {
-    font-size: 12px;
-    font-weight: 600;
-    margin: 10px 7px;
-    text-transform: capitalize;
-    color: black;
-  }
-  .box h6 {
-    font-size: 11px;
-    margin: 9px 7px;
-    color: red;
-  }
-}
-
+/* FOOTER */
 .footer {
   display: flex;
   background-color: #04405a;
@@ -171,5 +106,75 @@
       font-weight: 300;
       margin-top: -15px;
     }
+  }
+}
+
+/* RECIPIE CATEGORY FILTER */
+.Recipe_category {
+  display: flex;
+  padding: 30px 20px 30px 50px;
+  font-family: "Poppins", sans-serif;
+
+  .title {
+    font-size: 16px;
+    width: 130px;
+    padding-top: 0px;
+  }
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 826px;
+    margin-left: 30px;
+  }
+  .button {
+    border-radius: 15px;
+    padding: 10px;
+    color: #253d4e;
+    background-color: white;
+    font-size: 16px;
+    transition: 0.2s ease;
+    border: 0px;
+  }
+  .button:hover {
+    background-color: #06648e;
+    color: white;
+  }
+}
+
+/* RECIPE BOX */
+.Recipe_box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 50px 80px;
+  font-family: "Poppins", sans-serif;
+
+  .box {
+    border: 1px solid rgb(238, 238, 238);
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 40px;
+    max-width: 191px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .box img {
+    width: 180px;
+    height: 123px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  .recipie_title {
+    font-size: 12px;
+    font-weight: 600;
+    margin: 10px 7px;
+    text-transform: capitalize;
+    color: black;
+  }
+  .box h6 {
+    font-size: 11px;
+    margin: 9px 7px;
+    color: red;
   }
 }
