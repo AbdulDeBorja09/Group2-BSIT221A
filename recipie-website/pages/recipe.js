@@ -25,7 +25,7 @@ export default function Recipe({ recipe }) {
         {recipe.map((recipes) => {
           return (
             <a className={styles.box} key={recipes.id}>
-              <img src="/recipes/image3.jpg" alt="" />
+              <img src={`/recipes/${recipes.image}`} alt="recipe image" />
               <h5 className={styles.recipie_title}>{recipes.Recipe_name}</h5>
               <h6>{recipes.Cooking_time}</h6>
             </a>
@@ -37,7 +37,7 @@ export default function Recipe({ recipe }) {
   );
 }
 export async function getStaticProps() {
-  const filePath = path.join(process.cwd(), "./data/recipes.json");
+  const filePath = path.join(process.cwd(), "data/recipes.json");
   const fileContent = fs.readFileSync(filePath, "utf8");
   const data = JSON.parse(fileContent);
 
