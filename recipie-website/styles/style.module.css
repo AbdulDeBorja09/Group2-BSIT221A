@@ -1,18 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* NAVBAR  */
+
 .nav {
   display: flex;
   padding: 10px 20px;
   font-family: "Poppins", sans-serif;
-
   .navbrand {
     width: 50%;
   }
   .navbrand img {
     width: 168px;
   }
-
   .navlinks {
     width: 50%;
     display: flex;
@@ -28,7 +27,9 @@
     color: #06648e;
   }
 }
+
 /* FOOTER */
+
 .footer {
   display: flex;
   background-color: #04405a;
@@ -59,7 +60,6 @@
     width: 138px;
     display: flex;
     flex-direction: column;
-
     .upper {
       margin-top: 20px;
       display: flex;
@@ -70,8 +70,8 @@
       font-size: 14px;
       color: white;
       font-weight: 700;
-      margin-top: -10px;
-      margin-bottom: 6px;
+      margin-top: -20px;
+      margin-bottom: 5px;
     }
     .lower {
       margin-top: 25px;
@@ -92,29 +92,60 @@
     display: flex;
     flex-direction: column;
     padding-left: 50px;
-
-    .title {
+    .titles {
       color: white;
       font-size: 14px;
       font-weight: 700;
-      margin-top: 10px;
+      margin-top: 0px;
     }
-    .subtitle {
+    .subtitles {
       font-size: 10px;
       line-height: 1;
       color: white;
       font-weight: 300;
-      margin-top: -15px;
+      margin-top: 5px;
     }
   }
 }
 
 /* RECIPIE CATEGORY FILTER */
+
 .Recipe_category {
   display: flex;
   padding: 30px 20px 30px 50px;
   font-family: "Poppins", sans-serif;
+  .title {
+    font-size: 16px;
+    width: 130px;
+    margin-top: 10px;
+  }
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 826px;
+    margin-left: 30px;
+  }
+  .button {
+    border-radius: 15px;
+    padding: 10px;
+    color: #253d4e;
+    background-color: white;
+    font-size: 16px;
+    transition: 0.2s ease;
+    border: 0px;
+  }
+  .button:hover {
+    background-color: #06648e;
+    color: white;
+  }
+}
 
+/* RECIPIE CATEGORY FILTER */
+
+.Recipe_category {
+  display: flex;
+  padding: 30px 20px 30px 50px;
+  font-family: "Poppins", sans-serif;
   .title {
     font-size: 16px;
     width: 130px;
@@ -142,13 +173,13 @@
 }
 
 /* RECIPE BOX */
+
 .Recipe_box {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 50px 80px;
   font-family: "Poppins", sans-serif;
-
   .box {
     border: 1px solid rgb(238, 238, 238);
     border-radius: 10px;
@@ -163,6 +194,7 @@
     width: 180px;
     height: 123px;
     border-radius: 10px;
+    -o-object-fit: cover;
     object-fit: cover;
   }
   .recipie_title {
@@ -179,7 +211,8 @@
   }
 }
 
-/*ABOUT US*/
+/* ABOUT US */
+
 .about_us {
   font-family: "Poppins", sans-serif;
   .about_title {
@@ -219,8 +252,8 @@
     border-radius: 10px;
   }
 }
-/* CONTACT US */
 
+/* CONTACT US */
 .contact_us {
   font-family: "Poppins", sans-serif;
   margin-bottom: 200px;
@@ -247,5 +280,24 @@
   }
   .contact_text .email {
     color: #06648e;
+  }
+}
+
+/* HOME TITLE */
+.home_title {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  font-family: "Poppins", sans-serif;
+
+  .home_container {
+    width: 300px;
+    text-align: center;
+    border-bottom: 2px solid #06648e;
+  }
+  .home_container .title {
+    text-align: center;
+    font-size: 24px;
+    color: #253d4e;
   }
 }

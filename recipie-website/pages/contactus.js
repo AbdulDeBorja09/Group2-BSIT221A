@@ -10,7 +10,7 @@ export default function Contactus() {
       <section className={styles.contact_us}>
         <div className={styles.contact_title}>
           <div className={styles.contact_container}>
-            <h1 className={styles.title}>About Us</h1>
+            <h1 className={styles.title}>Contact Us</h1>
           </div>
         </div>
         <div className={styles.contact_text}>

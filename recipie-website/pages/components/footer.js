@@ -37,13 +37,13 @@ export default function Footer() {
           </div>
         </div>
         <div className={styles.col3}>
-          <h5 className={styles.title}>Recipes</h5>
-          <h6 className={styles.subtitle}>Breakfast</h6>
-          <h6 className={styles.subtitle}>Lunch</h6>
-          <h6 className={styles.subtitle}>Dinner</h6>
-          <h6 className={styles.subtitle}>Main-Course</h6>
-          <h6 className={styles.subtitle}>Dessert</h6>
-          <h6 className={styles.subtitle}>Vegetarian Dishes</h6>
+          <h5 className={styles.titles}>Recipes</h5>
+          <h6 className={styles.subtitles}>Breakfast</h6>
+          <h6 className={styles.subtitles}>Lunch</h6>
+          <h6 className={styles.subtitles}>Dinner</h6>
+          <h6 className={styles.subtitles}>Main-Course</h6>
+          <h6 className={styles.subtitles}>Dessert</h6>
+          <h6 className={styles.subtitles}>Vegetarian Dishes</h6>
         </div>
       </footer>
     </>
