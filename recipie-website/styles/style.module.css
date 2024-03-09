@@ -220,3 +220,32 @@
   }
 }
 /* CONTACT US */
+
+.contact_us {
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 200px;
+  .contact_title {
+    display: flex;
+    justify-content: space-around;
+  }
+  .contact_container {
+    width: 300px;
+    text-align: center;
+    border-bottom: 2px solid #06648e;
+  }
+  .contact_container .title {
+    text-align: center;
+    font-size: 24px;
+    color: #253d4e;
+  }
+  .contact_text .text {
+    margin: auto;
+    width: 767px;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 16px;
+  }
+  .contact_text .email {
+    color: #06648e;
+  }
+}
