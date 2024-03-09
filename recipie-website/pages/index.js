@@ -23,7 +23,7 @@ export default function Home({ recipe }) {
         {recipe.slice(0, 4).map((recipes) => {
           return (
             <a className={styles.box} key={recipes.id}>
-              <img src={`/recipe/${recipes.image}`} alt="recipe image" />
+              <img src={`/recipes/${recipes.image}`} alt="recipe image" />
               <h5 className={styles.recipie_title}>{recipes.Recipe_name}</h5>
               <h6>{recipes.Cooking_time}</h6>
             </a>
