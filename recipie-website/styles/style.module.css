@@ -24,8 +24,12 @@
     color: #253d4e;
     font-size: 16px;
   }
+  .navlinks .links:hover {
+    color: #a3a3a3;
+  }
   .navlinks .selected {
     color: #06648e;
+    font-weight: 600;
   }
 }
 
@@ -126,12 +130,17 @@
     width: 826px;
     margin-left: 30px;
   }
+  .selected {
+    background-color: #06648e;
+    color: white;
+  }
   .button {
     border-radius: 15px;
     padding: 10px;
     color: #253d4e;
     background-color: white;
     font-size: 16px;
+    width: 140px;
     transition: 0.2s ease;
     border: 0px;
   }
@@ -178,8 +187,9 @@
 .Recipe_box {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 50px 80px;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 10px 80px 50px 80px;
   font-family: "Poppins", sans-serif;
   .box {
     border: 1px solid rgb(238, 238, 238);
@@ -190,6 +200,10 @@
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     text-decoration: none;
     cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+  .box:hover {
+    transform: scale(1.1);
   }
   .box img {
     width: 180px;
@@ -210,6 +224,8 @@
     margin: 9px 7px;
     color: red;
   }
+}
+.Recipe_box:hover {
 }
 
 /* ABOUT US */
@@ -301,5 +317,114 @@
     text-align: center;
     font-size: 24px;
     color: #253d4e;
+  }
+}
+/* VIEWPAGE TITLE */
+.Viewpage_title {
+  display: flex;
+  justify-content: space-evenly;
+  color: #253d4e;
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+
+  .viewpage_top {
+    text-align: center;
+
+    .title_div {
+      text-align: center;
+      border-bottom: 1px solid #06648e;
+      font-weight: 600;
+      margin: 0px auto;
+      width: 350px;
+      padding-bottom: 5px;
+    }
+    .title {
+      font-size: 24px;
+    }
+    .subtitle {
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+  .description {
+    width: 424px;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+  }
+}
+
+/* VIEWPAGE DETAILS */
+.recipe_container {
+  display: flex;
+  width: 100%;
+  padding: 30px 100px;
+  color: #253d4e;
+  font-family: "Poppins", sans-serif;
+
+  .col1 {
+    width: 60%;
+
+    .img {
+      width: 440px;
+      height: 416px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .oval {
+      margin-top: 20px;
+      background-color: #06648e;
+      width: 440px;
+      height: 18px;
+      border-radius: 20px;
+    }
+    .details {
+      z-index: -1;
+      margin-top: -2px;
+      border: 1px solid black;
+      border-top: 0;
+      width: 430px;
+      margin-left: 5px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      padding: 20px 30px 30px 30px;
+    }
+    .table {
+      width: 100%;
+    }
+    .table tr td .title {
+      font-size: 12px;
+      margin-top: 10px;
+      font-weight: 700;
+    }
+    .table tr td .subtitle {
+      font-size: 12px;
+      font-weight: 400;
+    }
+  }
+  .col2 {
+    width: 40%;
+    font-size: 14px;
+  }
+  .ingredients {
+    font-weight: 700;
+  }
+  .ul {
+    list-style: disc;
+    margin-left: 30px;
+    .li {
+      margin-top: 5px;
+    }
+  }
+  .procedure {
+    margin-top: 30px;
+    font-weight: 700;
+  }
+  .ol {
+    list-style-type: decimal;
+    margin-left: 30px;
+    .li {
+      margin-top: 5px;
+    }
   }
 }
