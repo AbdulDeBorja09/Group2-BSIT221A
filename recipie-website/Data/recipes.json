@@ -2,10 +2,12 @@
   {
       "Id": 1,
       "Recipe_name": "Spaghetti Carbonara",
+      "Category": "Main-Course",
       "Preparation time": "10 minutes",
       "Cooking_time": "15 minutes",
       "Calories": "500 kcal",
       "Difficulty": "Intermediate",
+      "image": "SpaghettiCarbonara.jpg",
       "Dietary Restriction": "None",
       "Description": "Classic Italian pasta dish with creamy sauce, crispy bacon, and Parmesan cheese.",
       "Ingredients": {
@@ -30,10 +32,12 @@
   {
       "Id": 2,
       "Recipe_name": "Chicken Stir-Fry",
+      "Category": "Main-Course",
       "Preparation time": "15 minutes",
       "Cooking_time": "15 minutes",
       "Calories": "400 kcal",
       "Difficulty": "Easy",
+      "image": "ChickenStirFry.jpg",
       "Dietary Restriction": "None",
       "Description": "Quick and healthy stir-fry loaded with chicken, colorful vegetables, and flavorful sauce.",
       "Ingredients": {
@@ -62,10 +66,12 @@
   {
       "Id": 3,
       "Recipe_name": "Vegetable Curry",
+      "Category": "Main-Course",
       "Preparation time": "20 minutes",
       "Cooking_time": "25 minutes",
       "Calories": "300 kcal",
       "Difficulty": "Easy",
+      "image": "VegetableCurry.jpg",
       "Dietary Restriction": "Vegan",
       "Description": "A comforting and aromatic vegan curry loaded with vegetables and spices.",
       "Ingredients": {
@@ -94,10 +100,12 @@
   {
       "Id": 4,
       "Recipe_name": "Grilled Salmon with Lemon Herb Butter",
+      "Category": "Main-Course",
       "Preparation time": "10 minutes",
       "Cooking_time": "15 minutes",
       "Calories": "350 kcal",
       "Difficulty": "Intermediate",
+      "image": "GrilledSalmonWithLemonHerbButter.jpg",
       "Dietary Restriction": "None",
       "Description": "Tender and juicy grilled salmon fillets topped with flavorful lemon herb butter.",
       "Ingredients": {
@@ -123,10 +131,12 @@
   {
       "Id": 5,
       "Recipe_name": "Mushroom Risotto",
+      "Category": "Main-Course",
       "Preparation time": "10 minutes",
       "Cooking_time": "30 minutes",
       "Calories": "450 kcal",
       "Difficulty": "Intermediate",
+      "image": "MsuhroomRissotto.jpg",
       "Dietary Restriction": "Vegetarian",
       "Description": "Creamy and flavorful risotto cooked with Arborio rice and savory mushrooms.",
       "Ingredients": {
@@ -156,10 +166,12 @@
   {
       "Id": 6,
       "Recipe_name": "Beef Tacos",
+      "Category": "Main-Course",
       "Preparation time": "20 minutes",
       "Cooking_time": "15 minutes",
       "Calories": "350 kcal",
       "Difficulty": "Easy",
+      "image": "MsuhroomRissotto.jpg",
       "Dietary Restriction": "None",
       "Description": "Flavorful beef filling served in crispy taco shells with your favorite toppings.",
       "Ingredients": {
@@ -187,10 +199,12 @@
   {
       "Id": 7,
       "Recipe_name": "Chicken Alfredo Pasta",
+      "Category": "Dinner",
       "Preparation time": "10 minutes",
       "Cooking_time": "20 minutes",
       "Calories": "600 kcal",
       "Difficulty": "Intermediate",
+      "image": "ChickenAlfredoPasta.jpg",
       "Dietary Restriction": "None",
       "Description": "Creamy Alfredo sauce tossed with tender chicken and fettuccine pasta.",
       "Ingredients": {
@@ -217,10 +231,12 @@
   {
       "Id": 8,
       "Recipe_name": "Vegetable Stir-Fry with Tofu",
+      "Category": "Main-Course",
       "Preparation time": "15 minutes",
       "Cooking_time": "15 minutes",
       "Calories": "300 kcal",
       "Difficulty": "Easy",
+      "image": "VegetableStirFryWithTofu.jpg",
       "Dietary Restriction": "Vegan",
       "Description": "Healthy and colorful stir-fry made with tofu and fresh vegetables.",
       "Ingredients": {
@@ -249,10 +265,12 @@
   {
       "Id": 9,
       "Recipe_name": "Margherita Pizza",
+      "Category": "Main-Course",
       "Preparation time": "15 minutes",
       "Cooking_time": "15 minutes",
       "Calories": "400 kcal",
       "Difficulty": "Easy",
+      "image": "MargheritaPizza.jpg",
       "Dietary Restriction": "Vegetarian",
       "Description": "Classic Italian pizza topped with fresh tomatoes, mozzarella cheese, and basil.",
       "Ingredients": {
@@ -279,10 +297,12 @@
   {
       "Id": 10,
       "Recipe_name": "Beef and Broccoli Stir-Fry",
+      "Category": "Main-Course",
       "Preparation time": "15 minutes",
       "Cooking_time": "15 minutes",
       "Calories": "350 kcal",
       "Difficulty": "Easy",
+      "image": "BeefandBroccoliStirFry.jpg",
       "Dietary Restriction": "None",
       "Description": "Quick and easy stir-fry dish featuring tender beef and crisp broccoli in a savory sauce.",
       "Ingredients": {
@@ -312,10 +332,12 @@
   {
       "Id": 11,
       "Recipe_name": "Chicken Noodle Soup",
+      "Category": "Dinner",
       "Preparation time": "15 minutes",
       "Cooking_time": "30 minutes",
       "Calories": "250 kcal",
       "Difficulty": "Easy",
+      "image": "ChickenNoodleSoup.jpg",
       "Dietary Restriction": "None",
       "Description": "Comforting and nourishing soup made with tender chicken, vegetables, and noodles.",
       "Ingredients": {
@@ -343,10 +365,12 @@
   {
       "Id": 12,
       "Recipe_name": "Shrimp Scampi",
+      "Category": "Dinner",
       "Preparation time": "10 minutes",
       "Cooking_time": "10 minutes",
       "Calories": "300 kcal",
       "Difficulty": "Intermediate",
+      "image": "ShrimpScampi.jpg",
       "Dietary Restriction": "None",
       "Description": "Succulent shrimp cooked in a garlic butter sauce, served over pasta.",
       "Ingredients": {
@@ -374,10 +398,12 @@
   {
       "Id": 13,
       "Recipe_name": "Caprese Salad",
+      "Category": "Lunch",
       "Preparation time": "10 minutes",
       "Cooking_time": "0 minutes",
       "Calories": "200 kcal",
       "Difficulty": "Easy",
+      "image": "CapreseSalad.jpg",
       "Dietary Restriction": "Vegetarian",
       "Description": "Simple and refreshing salad made with fresh tomatoes, mozzarella cheese, and basil.",
       "Ingredients": {
@@ -399,10 +425,12 @@
   {
       "Id": 14,
       "Recipe_name": "Beef Stroganoff",
+      "Category": "Dinner",
       "Preparation time": "15 minutes",
       "Cooking_time": "25 minutes",
       "Calories": "400 kcal",
       "Difficulty": "Intermediate",
+      "image": "BeefStroganoff.jpg",
       "Dietary Restriction": "None",
       "Description": "Tender beef strips cooked in a creamy mushroom sauce, served over egg noodles.",
       "Ingredients": {
@@ -434,10 +462,12 @@
   {
       "Id": 15,
       "Recipe_name": "Chocolate Chip Cookies",
+      "Category": "Dessert",
       "Preparation time": "15 minutes",
       "Cooking_time": "10 minutes",
       "Calories": "150 kcal per cookie",
       "Difficulty": "Easy",
+      "image": "ChocolateChipCookies.jpg",
       "Dietary Restriction": "None",
       "Description": "Classic homemade chocolate chip cookies that are soft, chewy, and loaded with chocolate chips.",
       "Ingredients": {
@@ -466,10 +496,12 @@
   {
       "Id": 16,
       "Recipe_name": "Chicken Parmesan",
+      "Category": "Main-Course",
       "Preparation time": "15 minutes",
       "Cooking_time": "30 minutes",
       "Calories": "400 kcal",
       "Difficulty": "Intermediate",
+      "image": "ChickenParmesan.jpg",
       "Dietary Restriction": "None",
       "Description": "Classic Italian-American dish featuring breaded chicken breasts topped with marinara sauce and melted cheese.",
       "Ingredients": {
@@ -499,10 +531,12 @@
   {
       "Id": 17,
       "Recipe_name": "Pancakes",
+      "Category": "Breakfast",
       "Preparation time": "10 minutes",
       "Cooking_time": "15 minutes",
       "Calories": "150 kcal per pancake",
       "Difficulty": "Easy",
+      "image": "Pancakes.jpg",
       "Dietary Restriction": "None",
       "Description": "Fluffy and delicious pancakes that are perfect for a weekend breakfast.",
       "Ingredients": {
@@ -526,10 +560,12 @@
   {
       "Id": 18,
       "Recipe_name": "Guacamole",
+      "Category": "Lunch",
       "Preparation time": "10 minutes",
       "Cooking_time": "0 minutes",
       "Calories": "120 kcal per serving",
       "Difficulty": "Easy",
+      "image": "Guacamole.jpg",
       "Dietary Restriction": "Vegetarian, Vegan",
       "Description": "Fresh and flavorful dip made with ripe avocados, tomatoes, onions, lime juice, and cilantro.",
       "Ingredients": {
@@ -552,10 +588,12 @@
   {
       "Id": 19,
       "Recipe_name": "Vegetable Stir-Fry",
+      "Category": "Main-Course",
       "Preparation time": "15 minutes",
       "Cooking_time": "15 minutes",
       "Calories": "200 kcal per serving",
       "Difficulty": "Easy",
+      "image": "VegetableStirFry.jpg",
       "Dietary Restriction": "Vegetarian, Vegan",
       "Description": "Healthy and colorful stir-fry loaded with a variety of fresh vegetables and tossed in a savory sauce.",
       "Ingredients": {
@@ -584,10 +622,12 @@
   {
       "Id": 20,
       "Recipe_name": "Margarita Pizza",
+      "Category": "Dinner",
       "Preparation time": "15 minutes",
       "Cooking_time": "15 minutes",
       "Calories": "300 kcal per serving",
       "Difficulty": "Easy",
+      "image": "MargaritaPizza.jpg",
       "Dietary Restriction": "Vegetarian",
       "Description": "Classic Italian pizza topped with tomato sauce, fresh mozzarella cheese, and basil leaves.",
       "Ingredients": {
@@ -613,10 +653,12 @@
   {
       "Id": 21,
       "Recipe_name": "Chicken Caesar Salad",
+      "Category": "Lunch",
       "Preparation time": "20 minutes",
       "Cooking_time": "10 minutes",
       "Calories": "350 kcal per serving",
       "Difficulty": "Easy",
+      "image": "ChickenCaesarSalad.jpg",
       "Dietary Restriction": "None",
       "Description": "Classic Caesar salad topped with grilled chicken breast and homemade Caesar dressing.",
       "Ingredients": {
