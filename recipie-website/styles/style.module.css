@@ -177,4 +177,43 @@
     margin: 9px 7px;
     color: red;
   }
+  .about_us {
+    font-family: "Poppins", sans-serif;
+    .about_title {
+      display: flex;
+      justify-content: space-around;
+    }
+    .title_container {
+      width: 300px;
+      text-align: center;
+      border-bottom: 2px solid #06648e;
+    }
+    .title_container .title {
+      text-align: center;
+      font-size: 24px;
+      color: #253d4e;
+    }
+    .about_text .text {
+      margin: auto;
+      width: 767px;
+      text-align: center;
+      margin-top: 30px;
+      font-size: 16px;
+    }
+    .about_image_flex {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-top: 80px;
+      width: 790px;
+      margin: 60px auto;
+    }
+    .imagebox {
+      width: 155px;
+      margin: 20px 20px;
+      height: 155px;
+      background-color: #d9d9d9;
+      border-radius: 10px;
+    }
+  }
 }
