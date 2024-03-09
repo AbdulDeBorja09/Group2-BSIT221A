@@ -2,6 +2,7 @@ import Link from "next/link";
 import styles from "@/styles/style.module.css";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
+import Ourteam from "./components/ourteam";
 
 export default function Contactus() {
   return (
@@ -30,15 +31,7 @@ export default function Contactus() {
             culinary journey. Happy cooking!
           </p>
         </div>
-        <div className={styles.about_image_flex} class="about_image_flex">
-          <div className={styles.imagebox}></div>
-          <div className={styles.imagebox}></div>
-          <div className={styles.imagebox}></div>
-          <div className={styles.imagebox}></div>
-          <div className={styles.imagebox}></div>
-          <div className={styles.imagebox}></div>
-          <div className={styles.imagebox}></div>
-        </div>
+        <Ourteam />
       </section>
       <Footer />
     </>

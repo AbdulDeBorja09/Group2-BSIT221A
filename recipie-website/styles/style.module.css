@@ -6,6 +6,7 @@
   display: flex;
   padding: 10px 20px;
   font-family: "Poppins", sans-serif;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   .navbrand {
     width: 50%;
   }
@@ -212,8 +213,8 @@
 }
 
 /* ABOUT US */
-
 .about_us {
+  margin-top: 50px;
   font-family: "Poppins", sans-serif;
   .about_title {
     display: flex;
@@ -248,13 +249,14 @@
     width: 155px;
     margin: 20px 20px;
     height: 155px;
+    object-fit: cover;
     background-color: #d9d9d9;
     border-radius: 10px;
   }
 }
 
-/* CONTACT US */
 .contact_us {
+  margin-top: 50px;
   font-family: "Poppins", sans-serif;
   margin-bottom: 200px;
   .contact_title {

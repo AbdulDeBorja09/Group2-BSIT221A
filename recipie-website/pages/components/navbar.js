@@ -1,8 +1,11 @@
 import Link from "next/link";
 import Head from "next/head";
+import { useRouter } from "next/router";
 import styles from "@/styles/style.module.css";
 
 export default function Navbar() {
+  const router = useRouter();
+
   return (
     <>
       <Head>
@@ -16,17 +19,35 @@ export default function Navbar() {
           <img src="/logo.png" alt="" />
         </div>
         <div className={styles.navlinks}>
-          <Link className={styles.selected} href="../">
+          <Link
+            href="../"
+            className={router.pathname === "/" ? styles.selected : styles.links}
+          >
             Home
           </Link>
-          <Link className={styles.links} href="../recipe">
+          <Link
+            href="../recipe"
+            className={
+              router.pathname === "/recipe" ? styles.selected : styles.links
+            }
+          >
             Our Recipes
           </Link>
-          <Link className={styles.links} href="../aboutus">
+          <Link
+            href="../aboutus"
+            className={
+              router.pathname === "/aboutus" ? styles.selected : styles.links
+            }
+          >
             About Us
           </Link>
-          <Link className={styles.links} href="/contactus">
-            Contact
+          <Link
+            href="../contactus"
+            className={
+              router.pathname === "/contactus" ? styles.selected : styles.links
+            }
+          >
+            Contact Us
           </Link>
         </div>
       </nav>
