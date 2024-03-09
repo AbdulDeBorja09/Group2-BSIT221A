@@ -171,7 +171,7 @@
       "Cooking_time": "15 minutes",
       "Calories": "350 kcal",
       "Difficulty": "Easy",
-      "image": "MsuhroomRissotto.jpg",
+      "image": "BeefTacos.jpg",
       "Dietary Restriction": "None",
       "Description": "Flavorful beef filling served in crispy taco shells with your favorite toppings.",
       "Ingredients": {
@@ -230,40 +230,6 @@
   },
   {
       "Id": 8,
-      "Recipe_name": "Vegetable Stir-Fry with Tofu",
-      "Category": "Main-Course",
-      "Preparation time": "15 minutes",
-      "Cooking_time": "15 minutes",
-      "Calories": "300 kcal",
-      "Difficulty": "Easy",
-      "image": "VegetableStirFryWithTofu.jpg",
-      "Dietary Restriction": "Vegan",
-      "Description": "Healthy and colorful stir-fry made with tofu and fresh vegetables.",
-      "Ingredients": {
-          "Ingredients1": "400g firm tofu, cubed",
-          "Ingredients2": "2 cups mixed vegetables (e.g., bell peppers, broccoli, carrots, snap peas)",
-          "Ingredients3": "3 tablespoons soy sauce",
-          "Ingredients4": "2 tablespoons hoisin sauce",
-          "Ingredients5": "1 tablespoon sesame oil",
-          "Ingredients6": "2 cloves garlic, minced",
-          "Ingredients7": "1 tablespoon ginger, minced",
-          "Ingredients8": "2 tablespoons vegetable oil",
-          "Ingredients9": "Cooked rice for serving",
-          "Ingredients10": "Sesame seeds for garnish"
-      },
-      "Procedure": {
-          "Procedure1": "Heat vegetable oil in a large skillet or wok over medium-high heat.",
-          "Procedure2": "Add cubed tofu to the skillet and cook until golden brown on all sides. Remove from skillet and set aside.",
-          "Procedure3": "In the same skillet, add more oil if needed, and sauté minced garlic and ginger until fragrant.",
-          "Procedure4": "Add mixed vegetables to the skillet and stir-fry until tender-crisp.",
-          "Procedure5": "Return cooked tofu to the skillet.",
-          "Procedure6": "In a small bowl, mix together soy sauce, hoisin sauce, and sesame oil. Pour over the tofu and vegetables.",
-          "Procedure7": "Stir well to coat everything in the sauce and cook for another 2-3 minutes.",
-          "Procedure8": "Serve hot over cooked rice, garnished with sesame seeds."
-      }
-  },
-  {
-      "Id": 9,
       "Recipe_name": "Margherita Pizza",
       "Category": "Main-Course",
       "Preparation time": "15 minutes",
@@ -295,7 +261,7 @@
       }
   },
   {
-      "Id": 10,
+      "Id": 9,
       "Recipe_name": "Beef and Broccoli Stir-Fry",
       "Category": "Main-Course",
       "Preparation time": "15 minutes",
@@ -330,7 +296,7 @@
       }
   },
   {
-      "Id": 11,
+      "Id": 10,
       "Recipe_name": "Chicken Noodle Soup",
       "Category": "Dinner",
       "Preparation time": "15 minutes",
@@ -363,7 +329,7 @@
       }
   },
   {
-      "Id": 12,
+      "Id": 11,
       "Recipe_name": "Shrimp Scampi",
       "Category": "Dinner",
       "Preparation time": "10 minutes",
@@ -396,7 +362,7 @@
       }
   },
   {
-      "Id": 13,
+      "Id": 12,
       "Recipe_name": "Caprese Salad",
       "Category": "Lunch",
       "Preparation time": "10 minutes",
@@ -423,7 +389,7 @@
       }
   },
   {
-      "Id": 14,
+      "Id": 13,
       "Recipe_name": "Beef Stroganoff",
       "Category": "Dinner",
       "Preparation time": "15 minutes",
@@ -460,7 +426,7 @@
       }
   },
   {
-      "Id": 15,
+      "Id": 14,
       "Recipe_name": "Chocolate Chip Cookies",
       "Category": "Dessert",
       "Preparation time": "15 minutes",
@@ -494,7 +460,7 @@
       }
   },
   {
-      "Id": 16,
+      "Id": 15,
       "Recipe_name": "Chicken Parmesan",
       "Category": "Main-Course",
       "Preparation time": "15 minutes",
@@ -529,7 +495,7 @@
       }
   },
   {
-      "Id": 17,
+      "Id": 16,
       "Recipe_name": "Pancakes",
       "Category": "Breakfast",
       "Preparation time": "10 minutes",
@@ -558,7 +524,7 @@
       }
   },
   {
-      "Id": 18,
+      "Id": 17,
       "Recipe_name": "Guacamole",
       "Category": "Lunch",
       "Preparation time": "10 minutes",
@@ -586,7 +552,7 @@
       }
   },
   {
-      "Id": 19,
+      "Id": 18,
       "Recipe_name": "Vegetable Stir-Fry",
       "Category": "Main-Course",
       "Preparation time": "15 minutes",
@@ -620,7 +586,7 @@
       }
   },
   {
-      "Id": 20,
+      "Id": 19,
       "Recipe_name": "Margarita Pizza",
       "Category": "Dinner",
       "Preparation time": "15 minutes",
@@ -651,7 +617,7 @@
       }
   },
   {
-      "Id": 21,
+      "Id": 20,
       "Recipe_name": "Chicken Caesar Salad",
       "Category": "Lunch",
       "Preparation time": "20 minutes",
