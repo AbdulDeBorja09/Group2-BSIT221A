@@ -1,4 +1,5 @@
 import styles from "@/styles/style.module.scss";
+
 export default function Ourteam() {
   return (
     <>
@@ -7,8 +8,8 @@ export default function Ourteam() {
         <img className={styles.imagebox} src={`/profiles/ethan.png`} />
         <img className={styles.imagebox} src={`/profiles/khylle.png`} />
         <img className={styles.imagebox} src={`/profiles/wade.jpg`} />
-        <img className={styles.imagebox} src={`/profiles/unknown.jpg`} />
-        <img className={styles.imagebox} src={`/profiles/unknown.jpg`} />
+        <img className={styles.imagebox} src={`/profiles/shazz.jpeg`} />
+        <img className={styles.imagebox} src={`/profiles/jennilyn.jpg`} />
         <img className={styles.imagebox} src={`/profiles/unknown.jpg`} />
       </div>
     </>

@@ -1,32 +1,34 @@
 import Link from "next/link";
 import styles from "@/styles/style.module.scss";
+import Ourteam from "./components/ourteam";
 
 export default function Contactus() {
   return (
     <>
-      <section className={styles.contact_us}>
-        <div className={styles.contact_title}>
-          <div className={styles.contact_container}>
-            <h1 className={styles.title}>Contact Us</h1>
+      <section className={styles.about_us}>
+        <div className={styles.about_title}>
+          <div className={styles.title_container}>
+            <h1 className={styles.title}>About Us</h1>
           </div>
         </div>
-        <div className={styles.contact_text}>
+        <div className={styles.about_text}>
           <p className={styles.text}>
-            At Kitchen Pal, we value your feedback, questions, and suggestions.
-            Whether you have a query about a recipe, need assistance with
-            navigating our website, or simply want to share your cooking
-            adventures with us, we're here to help! Our dedicated support team
-            is committed to providing prompt and personalized assistance to
-            ensure your experience with Kitchen Pal is seamless and enjoyable.
-            Feel free to reach out to us via email at
-            <b className={styles.email}> kitchenpal@gmail.com</b> or through our
-            social media channels. We're always eager to hear from our community
-            of food enthusiasts and are dedicated to continuously improving and
-            enhancing your experience on our platform. Your input is invaluable
-            to us, so don't hesitate to get in touch. Let's cook up something
-            wonderful together!
+            Kitchen Pal was founded with a simple yet profound mission: to make
+            cooking enjoyable, accessible, and rewarding for everyone. Our team
+            of passionate food enthusiasts, professional chefs, and nutrition
+            experts curate an extensive collection of recipes spanning various
+            cuisines, dietary preferences, and cooking skill levels. From quick
+            and easy weekday dinners to elaborate weekend feasts, we've got you
+            covered with step-by-step instructions, helpful videos, and
+            practical cooking advice. At Kitchen Pal, we're not just about
+            recipes; we're about fostering a community of food lovers who share
+            a common passion for good food and great company. So, whether you're
+            looking to master the basics or impress your guests with gourmet
+            creations, Kitchen Pal is here to inspire and support you on your
+            culinary journey. Happy cooking!
           </p>
         </div>
+        <Ourteam />
       </section>
     </>
   );

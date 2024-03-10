@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-import recipesData from "../../data/recipes.json";
+import recipesData from "../../Data/recipes.json";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import styles from "@/styles/style.module.scss";
