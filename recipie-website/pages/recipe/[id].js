@@ -49,13 +49,13 @@ export default function RecipeViewPage() {
                   <td>
                     <h1 className={styles.title}>Preperation Time</h1>
                     <h2 className={styles.subtitle}>
-                      {selectedRecipe.Preparation_time}
+                      {selectedRecipe.Preparation_time}unets
                     </h2>
                   </td>
                   <td>
                     <h1 className={styles.title}>Cooking Time</h1>
                     <h2 className={styles.subtitle}>
-                      {selectedRecipe.Cooking_time}
+                      {selectedRecipe.Cooking_time}unets
                     </h2>
                   </td>
                   <td>

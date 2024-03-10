@@ -2,8 +2,8 @@ html,
 body {
   padding: 0;
   margin: 0;
+  scrollbar-width: none; 
 }
-
 * {
   box-sizing: border-box;
 }
@@ -228,7 +228,8 @@ textarea::-moz-placeholder {
   color: #9ca3af;
 }
 
-input::-moz-placeholder, textarea::-moz-placeholder {
+input::-moz-placeholder,
+textarea::-moz-placeholder {
   opacity: 1;
   color: #9ca3af;
 }
