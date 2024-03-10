@@ -45,19 +45,19 @@ export default function RecipeViewPage() {
               <tbody>
                 <tr>
                   <td>
-                    <h1 className={styles.title}>Preperation Time</h1>
+                    <h1 className={styles.title}>Preperation Time:</h1>
                     <h2 className={styles.subtitle}>
                       {selectedRecipe.Preparation_time}utes
                     </h2>
                   </td>
                   <td>
-                    <h1 className={styles.title}>Cooking Time</h1>
+                    <h1 className={styles.title}>Cooking Time:</h1>
                     <h2 className={styles.subtitle}>
                       {selectedRecipe.Cooking_time}utes
                     </h2>
                   </td>
                   <td>
-                    <h1 className={styles.title}>Calories</h1>
+                    <h1 className={styles.title}>Calories:</h1>
                     <h2 className={styles.subtitle}>
                       {selectedRecipe.Calories}
                     </h2>
@@ -82,7 +82,7 @@ export default function RecipeViewPage() {
           </div>
         </div>
         <div className={styles.col2}>
-          <h1 className={styles.ingredients}>Ingredients:</h1>
+          <h1 className={styles.ingredients}>Ingredients</h1>
           <ul className={styles.ul}>
             {Object.values(selectedRecipe.Ingredients).map(
               (ingredient, index) => (
