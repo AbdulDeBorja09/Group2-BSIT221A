@@ -617,8 +617,80 @@
   }
 
   // VIEWPAGE TABLET VIEW
-  .div {
-    font-size: 12px;
+  .recipe_container {
+    display: flex;
+    width: 100%;
+    padding: 30px 60px;
+    color: #253d4e;
+    font-family: "Poppins", sans-serif;
+
+    .col1 {
+      width: 60%;
+
+      .img {
+        width: 338px;
+        height: 303px;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+      .oval {
+        margin-top: 20px;
+        background-color: #06648e;
+        width: 338px;
+        height: 18px;
+        border-radius: 20px;
+      }
+      .details {
+        z-index: -1;
+        margin-top: -2px;
+        border: 1px solid black;
+        border-top: 0;
+        width: 329px;
+        margin-left: 5px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        padding: 10px 10px 20px 25px;
+      }
+      .table {
+        width: 100%;
+      }
+      .table tr td .title {
+        font-size: 10px;
+        margin-top: 10px;
+        font-weight: 700;
+      }
+      .table tr td .subtitle {
+        font-size: 9px;
+        font-weight: 400;
+      }
+    }
+    .col2 {
+      width: 40%;
+      font-size: 14px;
+    }
+    .ingredients {
+      font-weight: 700;
+    }
+    .ul {
+      list-style: disc;
+      margin-left: 30px;
+      .li {
+        margin-top: 5px;
+        font-size: 11px;
+      }
+    }
+    .procedure {
+      margin-top: 30px;
+      font-weight: 700;
+    }
+    .ol {
+      list-style-type: decimal;
+      margin-left: 30px;
+      .li {
+        margin-top: 5px;
+        font-size: 11px;
+      }
+    }
   }
 }
 
