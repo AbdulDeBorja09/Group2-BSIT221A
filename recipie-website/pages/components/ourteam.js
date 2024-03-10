@@ -10,7 +10,7 @@ export default function Ourteam() {
         <img className={styles.imagebox} src={`/profiles/wade.jpg`} />
         <img className={styles.imagebox} src={`/profiles/shazz.jpeg`} />
         <img className={styles.imagebox} src={`/profiles/jennilyn.jpg`} />
-        <img className={styles.imagebox} src={`/profiles/unknown.jpg`} />
+        <img className={styles.imagebox} src={`/profiles/jb.png`} />
       </div>
     </>
   );
