@@ -36,7 +36,7 @@ export default function Home({ recipe }) {
 }
 
 export async function getStaticProps() {
-  const filePath = path.join(process.cwd(), "./data/recipes.json");
+  const filePath = path.join(process.cwd(), "./Data/recipes.json");
   const fileContent = fs.readFileSync(filePath, "utf8");
   const data = JSON.parse(fileContent);
   console.log(data);
