@@ -3,9 +3,7 @@ import path from "path";
 import fs from "fs";
 import Head from "next/head";
 import Image from "next/image";
-import styles from "@/styles/style.module.css";
-import Navbar from "./components/navbar";
-import Footer from "./components/footer";
+import styles from "@/styles/style.module.scss";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
@@ -23,7 +21,6 @@ export default function Recipe({ recipe }) {
 
   return (
     <>
-      <Navbar />
       <section className={styles.Recipe_category}>
         <h1 className={styles.title}>All Categories:</h1>
         <div className={styles.buttons}>
@@ -81,7 +78,7 @@ export default function Recipe({ recipe }) {
         {filteredRecipe.map((recipe) => (
           <Link
             className={styles.box}
-            href={`/viewpage/${recipe.Id}`}
+            href={`/recipe/${recipe.Id}`}
             key={recipe.Id}
           >
             <img src={`/recipes/${recipe.image}`} alt="recipe image" />
@@ -90,9 +87,8 @@ export default function Recipe({ recipe }) {
           </Link>
         ))}
       </section>
-      <Footer />
     </>
-  );
+  )
 }
 
 export async function getStaticProps() {

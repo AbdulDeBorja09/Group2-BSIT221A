@@ -1,4 +1,4 @@
-import styles from "@/styles/style.module.css";
+import styles from "@/styles/style.module.scss";
 export default function Ourteam() {
   return (
     <>

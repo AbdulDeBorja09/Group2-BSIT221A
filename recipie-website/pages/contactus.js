@@ -1,12 +1,11 @@
 import Link from "next/link";
-import styles from "@/styles/style.module.css";
+import styles from "@/styles/style.module.scss";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 
 export default function Contactus() {
   return (
     <>
-      <Navbar />
       <section className={styles.contact_us}>
         <div className={styles.contact_title}>
           <div className={styles.contact_container}>
@@ -31,7 +30,6 @@ export default function Contactus() {
           </p>
         </div>
       </section>
-      <Footer />
     </>
   );
 }
