@@ -4,4 +4,5 @@ Leader : Abdul Aziz De borja
 - Shaz Izzo R. Pedrosa
 - Khylle Jefferson G. Dinero
 - Jennilyn M. Santos
-- 
+- Jairone Bart C. Alico
+- Wade Lydone J. Ballesteros
