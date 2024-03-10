@@ -492,8 +492,103 @@
 // STYLING FOR TABLET VIEW
 @media screen and (max-width: 768px) {
   // NAVBAR TABLET VIEW
+  .nav {
+    padding: 10px 0px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    .navbrand {
+      width: 50%;
+    }
+    .navbrand img {
+      width: 171px;
+    }
+    .navlinks {
+      padding: 15px 15px;
+    }
+    .navlinks .links {
+      font-size: 15px;
+    }
+    .navlinks .selected {
+      color: #06648e;
+      font-weight: 600;
+      font-size: 15px;
+    }
+  }
 
   // FOOTER TABLET VIEW
+.footer {
+  padding: 20px 110px;
+
+  .col1 {
+    width: 300px;
+    margin-right: 100px;
+
+    .title {
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .desc {
+      font-size: 8px;
+      margin-top: 10px;
+    }
+
+    .creds {
+      font-size: 7px;
+      color: white;
+      width: 227px;
+      font-weight: 200;
+      margin-top: 15px;
+    }
+  }
+
+  .col2 {
+    width: 150px;
+    margin-left: -50px;
+
+    .upper {
+      margin-top: 20px;
+    }
+
+    .upper .title,
+    .lower .title {
+      width: 300px;
+      font-size: 12px;
+      margin-top: -20px;
+      margin-bottom: 5px;
+    }
+
+    .lower {
+      margin-top: 25px;
+    }
+
+    .upper .link,
+    .lower .link {
+      margin-top: 0px;
+      font-size: 9px;
+    }
+  }
+
+  .col3 {
+    width: 150px;
+    padding-left: 0px;
+
+    .titles {
+      color: white;
+      font-size: 12px;
+      font-weight: 700;
+      margin-top: 0px;
+    }
+
+    .subtitles {
+      font-size: 9px;
+      line-height: 1;
+      color: white;
+      font-weight: 300;
+      width: 150px;
+      margin-top: 6px;
+    }
+  }
+}
 
   // CAROUSEL TABLET VIEW
 
@@ -617,81 +712,6 @@
   }
 
   // VIEWPAGE TABLET VIEW
-  .recipe_container {
-    display: flex;
-    width: 100%;
-    padding: 30px 60px;
-    color: #253d4e;
-    font-family: "Poppins", sans-serif;
-
-    .col1 {
-      width: 60%;
-
-      .img {
-        width: 338px;
-        height: 303px;
-        object-fit: cover;
-        border-radius: 10px;
-      }
-      .oval {
-        margin-top: 20px;
-        background-color: #06648e;
-        width: 338px;
-        height: 18px;
-        border-radius: 20px;
-      }
-      .details {
-        z-index: -1;
-        margin-top: -2px;
-        border: 1px solid black;
-        border-top: 0;
-        width: 329px;
-        margin-left: 5px;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-        padding: 10px 10px 20px 25px;
-      }
-      .table {
-        width: 100%;
-      }
-      .table tr td .title {
-        font-size: 10px;
-        margin-top: 10px;
-        font-weight: 700;
-      }
-      .table tr td .subtitle {
-        font-size: 9px;
-        font-weight: 400;
-      }
-    }
-    .col2 {
-      width: 40%;
-      font-size: 14px;
-    }
-    .ingredients {
-      font-weight: 700;
-    }
-    .ul {
-      list-style: disc;
-      margin-left: 30px;
-      .li {
-        margin-top: 5px;
-        font-size: 11px;
-      }
-    }
-    .procedure {
-      margin-top: 30px;
-      font-weight: 700;
-    }
-    .ol {
-      list-style-type: decimal;
-      margin-left: 30px;
-      .li {
-        margin-top: 5px;
-        font-size: 11px;
-      }
-    }
-  }
 }
 
 // STYLING FOR MOBILE VIEW
