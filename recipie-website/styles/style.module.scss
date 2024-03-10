@@ -503,8 +503,74 @@
   // RECIPE BOX TABLET VIEW
 
   // ABOUT US TABLET VIEW
+  .about_us {
+    margin-top: 50px;
+    font-family: "Poppins", sans-serif;
+    .title_container {
+      width: 300px;
+      text-align: center;
+      border-bottom: 2px solid #06648e;
+    }
+    .title_container .title {
+      text-align: center;
+      font-size: 24px;
+      color: #253d4e;
+    }
+    .about_text .text {
+      margin: auto;
+      width: 629px;
+      text-align: center;
+      margin-top: 30px;
+      font-size: 14px;
+    }
+    .about_image_flex {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      margin-top: 80px;
+      width: 640px;
+      margin: 2% auto;
+    }
+    .imagebox {
+      width: 149px;
+      margin: 20px 0px;
+      height: 151px;
+      object-fit: cover;
+      background-color: #d9d9d9;
+      border-radius: 10px;
+    }
+  }
 
   // CONTACT US TABLET VIEW
+  .contact_us {
+    margin-top: 50px;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 100px;
+    .contact_title {
+      display: flex;
+      justify-content: space-around;
+    }
+    .contact_container {
+      width: 300px;
+      text-align: center;
+      border-bottom: 2px solid #06648e;
+    }
+    .contact_container .title {
+      text-align: center;
+      font-size: 24px;
+      color: #253d4e;
+    }
+    .contact_text .text {
+      margin: auto;
+      width: 635px;
+      text-align: center;
+      margin-top: 30px;
+      font-size: 14px;
+    }
+    .contact_text .email {
+      color: #06648e;
+    }
+  }
 
   // VIEWPAGE TABLET VIEW
 }
