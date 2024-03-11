@@ -2,6 +2,7 @@ import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import recipesData from "../../Data/recipes.json";
 import styles from "@/styles/style.module.scss";
+import ErrorPage from "../components/error.js";
 
 export default function RecipeViewPage() {
   const router = useRouter();
@@ -16,7 +17,11 @@ export default function RecipeViewPage() {
   }, [id]);
 
   if (!selectedRecipe) {
-    return <div>Loading...</div>;
+    return (
+      <div>
+        <ErrorPage />
+      </div>
+    );
   }
 
   return (

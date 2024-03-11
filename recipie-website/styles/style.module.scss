@@ -428,6 +428,7 @@
 
 // 404 PAGE STYLE
 .error_page {
+  font-family: "Poppins", sans-serif;
   margin-top: 200px;
   top: 50%;
   position: relative;
@@ -444,6 +445,7 @@
     justify-content: space-around;
     width: 200px;
     margin: 0px auto;
+
     .error {
       font-size: 96px;
       font-weight: 700;
@@ -479,6 +481,46 @@
       color: white;
       font-size: 12px;
       border-radius: 7px;
+      padding: 7px 30px;
+    }
+  }
+}
+
+.failed_page {
+  font-family: "Poppins", sans-serif;
+  margin-top: 200px;
+  top: 50%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+
+  .top {
+    text-align: center;
+    border-bottom: 3px solid #06648e;
+    .error {
+      font-size: 96px;
+      font-weight: 700;
+      margin-top: 70px;
+      color: black;
+      padding-bottom: 0px;
+    }
+  }
+  .bottom {
+    text-align: center;
+    .error_msg {
+      margin: 9px auto;
+      font-size: 11px;
+      font-weight: 500;
+      width: 300px;
+    }
+    .return_btn {
+      margin: 0 auto;
+      background-color: #06648e;
+      color: white;
+      font-size: 12px;
+      border-radius: 7px;
+      font-weight: 600;
       padding: 7px 30px;
     }
   }
