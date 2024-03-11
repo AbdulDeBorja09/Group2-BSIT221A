@@ -44,7 +44,6 @@ export default function Footer() {
           <h6 className={styles.subtitles}>Dinner</h6>
           <h6 className={styles.subtitles}>Main-Course</h6>
           <h6 className={styles.subtitles}>Dessert</h6>
-          <h6 className={styles.subtitles}>Vegetarian Dishes</h6>
         </div>
       </footer>
     </>
