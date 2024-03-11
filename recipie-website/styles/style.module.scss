@@ -125,6 +125,7 @@
   display: flex;
   padding: 30px 20px 30px 50px;
   height: 100px;
+  padding: 0px 30px;
   font-family: "Poppins", sans-serif;
   .title {
     font-size: 16px;
@@ -138,30 +139,22 @@
     justify-content: space-between;
     width: 826px;
     margin-left: 30px;
-    margin-top: 0;
+    margin-top: 22px;
   }
   .selected {
     background-color: #06648e;
     color: white;
   }
-  .button {
-    border-radius: 15px;
-    padding: 10px;
-    color: #253d4e;
-    background-color: white;
-    font-size: 14px;
-    width: calc(50% - 10px);
-    transition: 0.2s ease;
-    border: 0px;
-  }
+  .button,
   .smallfont {
     border-radius: 15px;
     padding: 10px;
+    background-color: #ebedef;
     color: #253d4e;
-    background-color: white;
-    font-size: 15px;
+    font-size: 14px;
     width: calc(50% - 10px);
     transition: 0.2s ease;
+    height: 50px;
     border: 0px;
   }
   .button:hover,
@@ -365,10 +358,10 @@
   font-family: "Poppins", sans-serif;
 
   .col1 {
-    width: 60%;
+    width: 57%;
 
     .img {
-      width: 440px;
+      width: 100%;
       height: 416px;
       object-fit: cover;
       border-radius: 10px;
@@ -378,15 +371,16 @@
       background-color: #06648e;
       width: 440px;
       height: 18px;
+      width: 100%;
       border-radius: 20px;
     }
     .details {
-      z-index: -1;
+      z-index: 1;
       margin-top: -2px;
       border: 1px solid black;
       border-top: 0;
-      width: 430px;
-      margin-left: 5px;
+      width: 98%;
+      margin-left: 4px;
       border-bottom-left-radius: 10px;
       border-bottom-right-radius: 10px;
       padding: 20px 30px 30px 30px;
@@ -405,8 +399,9 @@
     }
   }
   .col2 {
-    width: 40%;
+    width: 43%;
     font-size: 14px;
+    padding-left: 40px;
   }
   .ingredients {
     font-weight: 700;
@@ -438,7 +433,7 @@
       border-radius: 15px;
       padding: 10px;
       color: #253d4e;
-      background-color: white;
+      background-color: #ebedef;
       font-size: 12px;
     }
     .button:hover,
@@ -485,12 +480,10 @@
         font-size: 12px;
         font-weight: 700;
       }
-
       .desc {
         font-size: 8px;
         margin-top: 10px;
       }
-
       .creds {
         font-size: 7px;
         color: white;
@@ -507,7 +500,6 @@
       .upper {
         margin-top: 20px;
       }
-
       .upper .title,
       .lower .title {
         width: 100%;
@@ -570,7 +562,7 @@
       display: flex;
       justify-content: space-between;
       width: 85%;
-
+      margin-top: 2px;
       margin-left: 0px;
     }
     .button,
@@ -669,15 +661,15 @@
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
-    padding: 30px 60px;
+    padding: 30px 30px 30px 60px;
     color: #253d4e;
     font-family: "Poppins", sans-serif;
 
     .col1 {
-      width: 60%;
+      width: 58%;
 
       .img {
-        width: 338px;
+        width: 100%;
         height: 303px;
         object-fit: cover;
         border-radius: 10px;
@@ -685,7 +677,7 @@
       .oval {
         margin-top: 20px;
         background-color: #06648e;
-        width: 338px;
+        width: 100%;
         height: 18px;
         border-radius: 20px;
       }
@@ -694,8 +686,8 @@
         margin-top: -2px;
         border: 1px solid black;
         border-top: 0;
-        width: 329px;
-        margin-left: 5px;
+        width: 98%;
+        margin-left: 4px;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
         padding: 10px 10px 20px 25px;
@@ -714,8 +706,9 @@
       }
     }
     .col2 {
-      width: 40%;
+      width: 42%;
       font-size: 14px;
+      padding-left: 20px;
     }
     .ingredients {
       font-weight: 700;
@@ -842,6 +835,13 @@
         margin-top: 6px;
       }
     }
+    .Viewpage_title {
+      display: flex;
+      justify-content: space-evenly;
+      color: #253d4e;
+      margin-top: 20px;
+      font-family: "Poppins", sans-serif;
+    }
   }
 
   // ABOUT US 660px
@@ -916,6 +916,119 @@
       width: 100%;
       transition: 0.2s ease;
       height: auto;
+    }
+  }
+  .recipe_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 30px 30px 30px 30px;
+    color: #253d4e;
+    font-family: "Poppins", sans-serif;
+
+    .col1 {
+      width: 100%;
+      .img {
+        width: 100%;
+        height: 303px;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+      .oval {
+        margin-top: 20px;
+        background-color: #06648e;
+        width: 100%;
+        height: 18px;
+        border-radius: 20px;
+      }
+      .details {
+        z-index: -1;
+        margin-top: -2px;
+        border: 1px solid black;
+        border-top: 0;
+        width: 98%;
+        margin-left: 3px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        padding: 10px 10px 20px 25px;
+      }
+      .table {
+        width: 100%;
+      }
+      .table tr td .title {
+        font-size: 10px;
+        margin-top: 10px;
+        font-weight: 700;
+      }
+      .table tr td .subtitle {
+        font-size: 9px;
+        font-weight: 400;
+      }
+    }
+    .col2 {
+      width: 100%;
+      font-size: 14px;
+      padding-left: 10px;
+      margin-top: 20px;
+    }
+    .ingredients {
+      font-weight: 700;
+    }
+    .ul {
+      list-style: disc;
+      margin-left: 30px;
+      .li {
+        margin-top: 5px;
+        font-size: 11px;
+      }
+    }
+    .procedure {
+      margin-top: 30px;
+      font-weight: 700;
+    }
+    .ol {
+      list-style-type: decimal;
+      margin-left: 30px;
+      .li {
+        margin-top: 5px;
+        font-size: 11px;
+      }
+    }
+  }
+
+  .Viewpage_title {
+    display: flex;
+    justify-content: space-evenly;
+    color: #253d4e;
+    margin-top: 20px;
+    font-family: "Poppins", sans-serif;
+
+    .viewpage_top {
+      text-align: center;
+
+      .title_div {
+        text-align: center;
+        border-bottom: 1px solid #06648e;
+        font-weight: 600;
+        margin: 0px auto;
+        width: 200px;
+        padding-bottom: 5px;
+      }
+      .title {
+        font-size: 14px;
+      }
+      .subtitle {
+        font-size: 12px;
+        font-weight: 400;
+      }
+    }
+    .description {
+      padding: 0px 70px;
+      margin-top: 15px;
+      text-align: center;
+      font-size: 11px;
     }
   }
 }
@@ -1025,6 +1138,11 @@
   // FOOTER MOBILE VIEW
 
   // CAROUSEL MOBILE VIEW
+  .image {
+    width: 100%;
+    height: 231px;
+    object-fit: cover;
+  }
 
   // FILTER CATEGORY MOBILE VIEW
 
@@ -1054,4 +1172,83 @@
   // CONTACT US MOBILE VIEW
 
   // VIEWPAGE MOBILE VIEW
+  .recipe_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 30px 10px 30px 10px;
+    color: #253d4e;
+    font-family: "Poppins", sans-serif;
+
+    .col1 {
+      width: 100%;
+      .img {
+        width: 100%;
+        height: 303px;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+      .oval {
+        margin-top: 20px;
+        background-color: #06648e;
+        width: 100%;
+        height: 18px;
+        border-radius: 20px;
+      }
+      .details {
+        z-index: -1;
+        margin-top: -2px;
+        border: 1px solid black;
+        border-top: 0;
+        width: 98%;
+        margin-left: 3px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        padding: 10px 10px 20px 25px;
+      }
+      .table {
+        width: 100%;
+      }
+      .table tr td .title {
+        font-size: 10px;
+        margin-top: 10px;
+        font-weight: 700;
+      }
+      .table tr td .subtitle {
+        font-size: 9px;
+        font-weight: 400;
+      }
+    }
+    .col2 {
+      width: 100%;
+      font-size: 14px;
+      padding-left: 10px;
+      margin-top: 20px;
+    }
+    .ingredients {
+      font-weight: 700;
+    }
+    .ul {
+      list-style: disc;
+      margin-left: 30px;
+      .li {
+        margin-top: 5px;
+        font-size: 11px;
+      }
+    }
+    .procedure {
+      margin-top: 30px;
+      font-weight: 700;
+    }
+    .ol {
+      list-style-type: decimal;
+      margin-left: 30px;
+      .li {
+        margin-top: 5px;
+        font-size: 11px;
+      }
+    }
+  }
 }
