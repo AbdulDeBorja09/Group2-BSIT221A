@@ -2,7 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  scrollbar-width: none; 
+  scrollbar-width: none;
 }
 * {
   box-sizing: border-box;
@@ -141,7 +141,6 @@ button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
-  -webkit-appearance: button;
   background-color: transparent;
   background-image: none;
 }
@@ -164,7 +163,6 @@ progress {
 }
 
 [type="search"] {
-  -webkit-appearance: textfield;
   outline-offset: -2px;
 }
 
@@ -258,7 +256,6 @@ iframe,
 embed,
 object {
   display: block;
-  vertical-align: middle;
 }
 
 img,
