@@ -578,3 +578,49 @@
 // STYLING FOR MOBILE VIEW
 @media screen and (max-width: 320px) {
 }
+// RECIPE FITLER TABLET VIEW
+.Recipe_category {
+  display: flex;
+  padding: 30px 20px 30px 20px;
+
+  .title {
+    font-size: 14px;
+    width: 15%;
+    margin-top: 14px;
+  }
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+
+    margin-left: 0px;
+  }
+  .button {
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 14px;
+    width: auto;
+    transition: 0.2s ease;
+    height: 50px;
+    border: 0px;
+  }
+}
+.Recipe_box {
+  margin: 10px 30px 10px 30px;
+  .box {
+    max-width: 143px;
+    margin-bottom: 35px;
+  }
+
+  .box img {
+    width: 140px;
+    height: 123px;
+  }
+  .recipie_title {
+    font-size: 10px;
+  }
+  .box h6 {
+    font-size: 12px;
+    margin: 9px 7px 7px 7px;
+  }
+}
