@@ -751,7 +751,7 @@
       top: 100%;
       left: 0;
       width: 100%;
-      background-color: #f9f9f9;
+      background-color: #ebedef;
       border-top: 1px solid #ccc;
       padding-top: 10px;
       transition: all 0.5s ease;
@@ -1168,6 +1168,34 @@
   }
 
   // ABOUT US MOBILE VIEW
+  .about_us {
+    margin-top: 20px;
+    .title_container {
+      width: 40%;
+    }
+    .title_container .title {
+      font-size: 14px;
+    }
+    .about_text .text {
+      width: 80%;
+      margin-top: 10px;
+      font-size: 10px;
+    }
+    .about_image_flex {
+      margin-top: 50px;
+      padding: 20px;
+      width: 100%;
+      margin: 2% auto;
+    }
+    .imagebox {
+      width: 110px;
+      margin: 10px 0px;
+      height: 110px;
+    }
+  }
+  .contact_us {
+    margin-top: 20px;
+  }
 
   // CONTACT US MOBILE VIEW
 
