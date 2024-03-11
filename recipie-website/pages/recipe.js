@@ -8,11 +8,11 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 
 export default function Recipe({ recipe }) {
+  const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [showButtons, setShowButtons] = useState(false);
   const [screenWidth, setScreenWidth] = useState(0);
   useEffect(() => {
-    // Set initial state based on window width
     const handleResize = () => {
       setScreenWidth(window.innerWidth);
       setShowButtons(window.innerWidth > 660);
@@ -33,13 +33,28 @@ export default function Recipe({ recipe }) {
     setSelectedCategory(category);
   };
 
+  const handleSearch = (event) => {
+    setSearchTerm(event.target.value);
+  };
+
   let filteredRecipe = recipe;
   if (selectedCategory) {
     filteredRecipe = recipe.filter((r) => r.Category === selectedCategory);
   }
 
+  const filteredSearchRecipe = filteredRecipe.filter(
+    (recipe) =>
+      recipe &&
+      recipe.Recipe_name &&
+      typeof recipe.Recipe_name === "string" &&
+      recipe.Recipe_name.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
   return (
     <>
+      <section className={styles.search_div}>
+        <input placeholder="Search..." onKeyUp={handleSearch}></input>
+      </section>
       <section className={styles.Recipe_category}>
         <button className={styles.title} onClick={handleToggleButtonClick}>
           {showButtons} Categories:
@@ -99,7 +114,7 @@ export default function Recipe({ recipe }) {
         </div>
       </section>
       <section className={styles.Recipe_box}>
-        {filteredRecipe.map((recipe) => (
+        {filteredSearchRecipe.map((recipe) => (
           <Link
             className={styles.box}
             href={`/recipe/${recipe.Id}`}
