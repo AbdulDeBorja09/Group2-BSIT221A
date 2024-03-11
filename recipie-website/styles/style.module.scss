@@ -506,7 +506,7 @@
 
       .upper .title,
       .lower .title {
-        width: 300px;
+        width: 100%;
         font-size: 12px;
         margin-top: -20px;
         margin-bottom: 5px;
@@ -539,7 +539,7 @@
         line-height: 1;
         color: white;
         font-weight: 300;
-        width: 150px;
+        width: 50%;
         margin-top: 6px;
       }
     }
@@ -927,7 +927,7 @@
       }
     }
     .col3 {
-      width: 150px;
+      width: 30%;
       padding-left: 50px;
       .titles {
         font-size: 9px;
