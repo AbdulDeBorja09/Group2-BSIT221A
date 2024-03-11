@@ -121,6 +121,7 @@
 // RECIPIE CATEGORY FILTER
 
 .Recipe_category {
+  display: block;
   display: flex;
   padding: 30px 20px 30px 50px;
   font-family: "Poppins", sans-serif;
@@ -603,28 +604,18 @@
   // ABOUT US TABLET VIEW
   .about_us {
     margin-top: 50px;
-    font-family: "Poppins", sans-serif;
     .title_container {
       width: 300px;
-      text-align: center;
-      border-bottom: 2px solid #06648e;
     }
     .title_container .title {
-      text-align: center;
       font-size: 24px;
-      color: #253d4e;
     }
     .about_text .text {
-      margin: auto;
       width: 629px;
-      text-align: center;
       margin-top: 30px;
       font-size: 14px;
     }
     .about_image_flex {
-      display: flex;
-      justify-content: space-evenly;
-      flex-wrap: wrap;
       margin-top: 80px;
       width: 640px;
       margin: 2% auto;
@@ -633,9 +624,6 @@
       width: 149px;
       margin: 20px 0px;
       height: 151px;
-      object-fit: cover;
-      background-color: #d9d9d9;
-      border-radius: 10px;
     }
   }
 
@@ -749,8 +737,8 @@
 }
 
 // ALL SIZE NAVBAR
-@media screen and (max-width: 620px) {
-  // NAVBAR
+@media screen and (max-width: 660px) {
+  // NAVBAR 660px
   .nav {
     padding: 10px 10px;
     .navlinks {
@@ -775,8 +763,6 @@
       width: 115px;
     }
     .navlinks .links {
-      text-decoration: none;
-      color: #253d4e;
       font-size: 12px;
       margin-bottom: 5px;
     }
@@ -791,7 +777,7 @@
       font-weight: 600;
     }
   }
-  // FOOTER
+  // FOOTER 660px
   .footer {
     padding: 20px 50px;
     .col1 {
@@ -850,9 +836,58 @@
       }
     }
   }
+  .Recipe_category {
+    display: none;
+  }
+
+  // ABOUT US 660px
+  .about_us {
+    margin-top: 50px;
+    .title_container {
+      width: 30%;
+    }
+    .title_container .title {
+      font-size: 20px;
+    }
+    .about_text .text {
+      width: 80%;
+      margin-top: 30px;
+      font-size: 12px;
+    }
+    .about_image_flex {
+      margin-top: 80px;
+      width: 80%;
+      margin: 2% auto;
+    }
+    .imagebox {
+      width: 110px;
+      margin: 20px 0px;
+      height: 112px;
+    }
+  }
+  // CONTACT US 660px
+  .contact_us {
+    .contact_title {
+      display: flex;
+      justify-content: space-around;
+    }
+    .contact_container {
+      width: 30%;
+    }
+    .contact_container .title {
+      font-size: 20px;
+    }
+    .contact_text .text {
+      margin: auto;
+      width: 80%;
+      text-align: center;
+      margin-top: 30px;
+      font-size: 12px;
+    }
+  }
 }
 
-// ALL SIZE FOOTER
+// ALL SIZE FOOTER 400px
 @media screen and (max-width: 400px) {
   // FOOTER
   .footer {
@@ -903,67 +938,89 @@
         margin-top: 6px;
       }
     }
+    .Recipe_category {
+      display: none;
+    }
+  }
+  // ABOUT US 400px
+  .about_us {
+    margin-top: 50px;
+    .title_container {
+      width: 40%;
+    }
+    .title_container .title {
+      font-size: 14px;
+    }
+    .about_text .text {
+      width: 80%;
+      margin-top: 30px;
+      font-size: 10px;
+    }
+    .about_image_flex {
+      margin-top: 80px;
+      width: 80%;
+      margin: 2% auto;
+    }
+    .imagebox {
+      width: 110px;
+      margin: 20px 0px;
+      height: 112px;
+    }
+  }
+
+  // CONTACT US 400px
+  .contact_us {
+    .contact_title {
+      display: flex;
+      justify-content: space-around;
+    }
+    .contact_container {
+      width: 30%;
+    }
+    .contact_container .title {
+      font-size: 14px;
+    }
+    .contact_text .text {
+      margin: auto;
+      width: 80%;
+      text-align: center;
+      margin-top: 30px;
+      font-size: 10px;
+    }
+  }
+  .Recipe_category {
+    display: none;
   }
 }
 
- // STYLING FOR MOBILE VIEW
-@media screen and (max-width: 0px) {
+// STYLING FOR MOBILE VIEW
+@media screen and (max-width: 350px) {
   // FOOTER MOBILE VIEW
-  .footer {
-    padding: 20px 20px;
-    .col1 {
-      width: 40%;
-      margin-right: 80px;
-      .title {
-        font-size: 10px;
-      }
-      .desc {
-        font-size: 6px;
-      }
-      .creds {
-        font-size: 6px;
-        margin-top: 10px;
-      }
-    }
-    .col2 {
-      width: 15%;
-      .upper {
-        margin-top: 20px;
-      }
-      .upper .title,
-      .lower .title {
-        font-size: 9px;
-        margin-top: -20px;
-        margin-bottom: 5px;
-      }
-      .lower {
-        margin-top: 30px;
-      }
-      .upper .link,
-      .lower .link {
-        margin-top: 0px;
-        font-size: 7px;
-      }
-    }
-    .col3 {
-      width: 150px;
-      padding-left: 50px;
-      .titles {
-        font-size: 9px;
-        margin-top: 0px;
-      }
-      .subtitles {
-        font-size: 7px;
-        margin-top: 6px;
-      }
-    }
-  }
 
   // CAROUSEL MOBILE VIEW
 
   // FILTER CATEGORY MOBILE VIEW
 
   // RECIPE BOX MOBILE VIEW
+  .Recipe_box {
+    margin: 10px 10px 10px 10px;
+    .box {
+      max-width: 143px;
+      margin-bottom: 35px;
+    }
+
+    .box img {
+      width: 121px;
+      height: 123px;
+    }
+    .recipie_title {
+      font-size: 10px;
+    }
+    .box h6 {
+      font-size: 12px;
+      margin: -5px 7px 3px 7px;
+    }
+  }
 
   // ABOUT US MOBILE VIEW
 
