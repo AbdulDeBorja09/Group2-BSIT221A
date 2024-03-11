@@ -1191,6 +1191,32 @@
       font-size: 11px;
     }
   }
+  .failed_page {
+    margin-top: 150px;
+    width: 80%;
+    .top {
+      text-align: center;
+      .error {
+        padding: 0px 20px;
+        font-size: 50px;
+        font-weight: 700;
+        margin-bottom: 5px;
+      }
+    }
+    .bottom {
+      text-align: center;
+      .error_msg {
+        font-size: 9px;
+        width: 80%;
+      }
+      .return_btn {
+        margin: 0 auto;
+        font-size: 8px;
+        padding: 7px 10px;
+        width: 20%;
+      }
+    }
+  }
 }
 
 // ALL SIZE FOOTER 400px
@@ -1352,16 +1378,12 @@
 
 // STYLING FOR MOBILE VIEW
 @media screen and (max-width: 350px) {
-  // FOOTER MOBILE VIEW
-
   // CAROUSEL MOBILE VIEW
   .image {
     width: 100%;
     height: 231px;
     object-fit: cover;
   }
-
-  // FILTER CATEGORY MOBILE VIEW
 
   // RECIPE BOX MOBILE VIEW
   .Recipe_box {
@@ -1413,8 +1435,6 @@
   .contact_us {
     margin-top: 20px;
   }
-
-  // CONTACT US MOBILE VIEW
 
   // VIEWPAGE MOBILE VIEW
   .recipe_container {
@@ -1496,6 +1516,8 @@
       }
     }
   }
+
+  // 404 PAGE MOBILE VIEW
   .error_page {
     margin-top: 190px;
     width: 80%;
@@ -1506,10 +1528,7 @@
 
       .error {
         font-size: 50px;
-        font-weight: 700;
         margin-top: 70px;
-        color: black;
-        padding-bottom: 0px;
       }
       .chef {
         width: 80%;
@@ -1530,17 +1549,40 @@
     .bottom {
       text-align: center;
       .error_msg {
-        margin: 9px auto;
         font-size: 9px;
-        font-weight: 500;
         width: 80%;
       }
       .return_btn {
         margin: 0 auto;
-        background-color: #06648e;
-        color: white;
         font-size: 8px;
-        border-radius: 7px;
+        padding: 7px 10px;
+        width: 20%;
+      }
+    }
+  }
+
+  // ERRRO PAGE MOBILE SIZE
+  .failed_page {
+    margin-top: 100px;
+    width: 80%;
+    .top {
+      text-align: center;
+      .error {
+        padding: 0px 20px;
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 5px;
+      }
+    }
+    .bottom {
+      text-align: center;
+      .error_msg {
+        font-size: 9px;
+        width: 80%;
+      }
+      .return_btn {
+        margin: 0 auto;
+        font-size: 8px;
         padding: 7px 10px;
         width: 20%;
       }
