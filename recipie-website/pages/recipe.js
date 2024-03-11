@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import path from "path";
 import fs from "fs";
 import Head from "next/head";
@@ -9,6 +9,25 @@ import { useRouter } from "next/router";
 
 export default function Recipe({ recipe }) {
   const [selectedCategory, setSelectedCategory] = useState(null);
+  const [showButtons, setShowButtons] = useState(false);
+  const [screenWidth, setScreenWidth] = useState(0);
+  useEffect(() => {
+    // Set initial state based on window width
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+      setShowButtons(window.innerWidth > 660);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const handleToggleButtonClick = () => {
+    setShowButtons(!showButtons);
+  };
 
   const handleCategoryClick = (category) => {
     setSelectedCategory(category);
@@ -22,8 +41,13 @@ export default function Recipe({ recipe }) {
   return (
     <>
       <section className={styles.Recipe_category}>
-        <h1 className={styles.title}>All Categories:</h1>
-        <div className={styles.buttons}>
+        <button className={styles.title} onClick={handleToggleButtonClick}>
+          {showButtons} Categories:
+        </button>
+        <div
+          className={styles.buttons}
+          style={{ display: showButtons ? "flex" : "none" }}
+        >
           <button
             className={`${styles.button} ${
               selectedCategory === null && styles.selected
@@ -57,7 +81,7 @@ export default function Recipe({ recipe }) {
             Dinner
           </button>
           <button
-            className={`${styles.button} ${
+            className={`${styles.smallfont} ${
               selectedCategory === "Main-Course" && styles.selected
             }`}
             onClick={() => handleCategoryClick("Main-Course")}
@@ -88,7 +112,7 @@ export default function Recipe({ recipe }) {
         ))}
       </section>
     </>
-  )
+  );
 }
 
 export async function getStaticProps() {
