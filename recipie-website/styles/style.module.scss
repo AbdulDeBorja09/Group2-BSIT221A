@@ -428,29 +428,31 @@
 
 // 404 PAGE STYLE
 .error_page {
+  margin-top: 200px;
   top: 50%;
-  position: absolute;
+  position: relative;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 500px;
   .top {
     text-align: center;
     border-bottom: 3px solid #06648e;
-    .image {
+    .images {
       display: flex;
       justify-content: space-around;
-      width: 100px;
+      width: 200px;
       margin: 0px auto;
       .error {
         font-size: 96px;
         font-weight: 700;
-        margin-top: 50px;
+        margin-top: 70px;
         color: black;
         padding-bottom: 0px;
       }
       .chef {
-        width: 170px;
+        width: 100%;
         margin-left: -30px;
+        height: 200px;
       }
     }
     .text {
