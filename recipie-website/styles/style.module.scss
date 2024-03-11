@@ -472,9 +472,8 @@
   // FOOTER TABLET VIEW
   .footer {
     padding: 20px 110px;
-
     .col1 {
-      width: 300px;
+      width: 100%;
       margin-right: 100px;
 
       .title {
@@ -792,12 +791,173 @@
       font-weight: 600;
     }
   }
+  // FOOTER
+  .footer {
+    padding: 20px 50px;
+    .col1 {
+      width: 40%;
+      margin-right: 80px;
+      .title {
+        font-size: 10px;
+        font-weight: 700;
+      }
+      .desc {
+        font-size: 8px;
+        font-weight: 300;
+        text-align: justify;
+      }
+      .creds {
+        font-size: 6px;
+        font-weight: 200;
+        margin-top: 10px;
+      }
+    }
+    .col2 {
+      width: 20%;
+      .upper {
+        margin-top: 20px;
+      }
+      .upper .title,
+      .lower .title {
+        font-size: 10px;
+        font-weight: 700;
+        margin-top: -20px;
+        margin-bottom: 5px;
+      }
+      .lower {
+        margin-top: 35px;
+      }
+      .upper .link,
+      .lower .link {
+        margin-top: 0px;
+        font-size: 7px;
+        font-weight: 300;
+      }
+    }
+    .col3 {
+      width: 150px;
+      padding-left: 50px;
+      .titles {
+        font-size: 10px;
+        font-weight: 700;
+        margin-top: 0px;
+      }
+      .subtitles {
+        font-size: 7px;
+        line-height: 1;
+        font-weight: 300;
+        margin-top: 6px;
+      }
+    }
+  }
 }
 
-@media screen and (max-width: 620px) {
-  // STYLING FOR MOBILE VIEW
+// ALL SIZE FOOTER
+@media screen and (max-width: 400px) {
+  // FOOTER
+  .footer {
+    padding: 20px 20px;
+    .col1 {
+      width: 40%;
+      margin-right: 80px;
+      .title {
+        font-size: 10px;
+      }
+      .desc {
+        font-size: 6px;
+      }
+      .creds {
+        font-size: 6px;
+        margin-top: 10px;
+      }
+    }
+    .col2 {
+      width: 15%;
+      .upper {
+        margin-top: 20px;
+      }
+      .upper .title,
+      .lower .title {
+        font-size: 9px;
+        margin-top: -20px;
+        margin-bottom: 5px;
+      }
+      .lower {
+        margin-top: 30px;
+      }
+      .upper .link,
+      .lower .link {
+        margin-top: 0px;
+        font-size: 7px;
+      }
+    }
+    .col3 {
+      width: 150px;
+      padding-left: 50px;
+      .titles {
+        font-size: 9px;
+        margin-top: 0px;
+      }
+      .subtitles {
+        font-size: 7px;
+        margin-top: 6px;
+      }
+    }
+  }
+}
 
+ // STYLING FOR MOBILE VIEW
+@media screen and (max-width: 0px) {
   // FOOTER MOBILE VIEW
+  .footer {
+    padding: 20px 20px;
+    .col1 {
+      width: 40%;
+      margin-right: 80px;
+      .title {
+        font-size: 10px;
+      }
+      .desc {
+        font-size: 6px;
+      }
+      .creds {
+        font-size: 6px;
+        margin-top: 10px;
+      }
+    }
+    .col2 {
+      width: 15%;
+      .upper {
+        margin-top: 20px;
+      }
+      .upper .title,
+      .lower .title {
+        font-size: 9px;
+        margin-top: -20px;
+        margin-bottom: 5px;
+      }
+      .lower {
+        margin-top: 30px;
+      }
+      .upper .link,
+      .lower .link {
+        margin-top: 0px;
+        font-size: 7px;
+      }
+    }
+    .col3 {
+      width: 150px;
+      padding-left: 50px;
+      .titles {
+        font-size: 9px;
+        margin-top: 0px;
+      }
+      .subtitles {
+        font-size: 7px;
+        margin-top: 6px;
+      }
+    }
+  }
 
   // CAROUSEL MOBILE VIEW
 
