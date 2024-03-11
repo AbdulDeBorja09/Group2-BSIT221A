@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 // NAVBAR
-
 .nav {
   display: flex;
+  position: relative;
+  justify-content: space-between;
   padding: 10px 20px;
   font-family: "Poppins", sans-serif;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -23,6 +24,7 @@
     text-decoration: none;
     color: #253d4e;
     font-size: 16px;
+    margin-bottom: 10px;
   }
   .navlinks .links:hover {
     color: #a3a3a3;
@@ -30,11 +32,14 @@
   .navlinks .selected {
     color: #06648e;
     font-weight: 600;
+    margin-bottom: 10;
+  }
+  .toggleBtn {
+    display: none;
   }
 }
 
 // FOOTER
-
 .footer {
   display: flex;
   background-color: #04405a;
@@ -465,80 +470,80 @@
   }
 
   // FOOTER TABLET VIEW
-.footer {
-  padding: 20px 110px;
+  .footer {
+    padding: 20px 110px;
 
-  .col1 {
-    width: 300px;
-    margin-right: 100px;
-
-    .title {
-      font-size: 12px;
-      font-weight: 700;
-    }
-
-    .desc {
-      font-size: 8px;
-      margin-top: 10px;
-    }
-
-    .creds {
-      font-size: 7px;
-      color: white;
-      width: 227px;
-      font-weight: 200;
-      margin-top: 15px;
-    }
-  }
-
-  .col2 {
-    width: 150px;
-    margin-left: -50px;
-
-    .upper {
-      margin-top: 20px;
-    }
-
-    .upper .title,
-    .lower .title {
+    .col1 {
       width: 300px;
-      font-size: 12px;
-      margin-top: -20px;
-      margin-bottom: 5px;
+      margin-right: 100px;
+
+      .title {
+        font-size: 12px;
+        font-weight: 700;
+      }
+
+      .desc {
+        font-size: 8px;
+        margin-top: 10px;
+      }
+
+      .creds {
+        font-size: 7px;
+        color: white;
+        width: 227px;
+        font-weight: 200;
+        margin-top: 15px;
+      }
     }
 
-    .lower {
-      margin-top: 25px;
-    }
-
-    .upper .link,
-    .lower .link {
-      margin-top: 0px;
-      font-size: 9px;
-    }
-  }
-
-  .col3 {
-    width: 150px;
-    padding-left: 0px;
-
-    .titles {
-      color: white;
-      font-size: 12px;
-      font-weight: 700;
-      margin-top: 0px;
-    }
-
-    .subtitles {
-      font-size: 9px;
-      line-height: 1;
-      color: white;
-      font-weight: 300;
+    .col2 {
       width: 150px;
-      margin-top: 6px;
+      margin-left: -50px;
+
+      .upper {
+        margin-top: 20px;
+      }
+
+      .upper .title,
+      .lower .title {
+        width: 300px;
+        font-size: 12px;
+        margin-top: -20px;
+        margin-bottom: 5px;
+      }
+
+      .lower {
+        margin-top: 25px;
+      }
+
+      .upper .link,
+      .lower .link {
+        margin-top: 0px;
+        font-size: 9px;
+      }
+    }
+
+    .col3 {
+      width: 150px;
+      padding-left: 0px;
+
+      .titles {
+        color: white;
+        font-size: 12px;
+        font-weight: 700;
+        margin-top: 0px;
+      }
+
+      .subtitles {
+        font-size: 9px;
+        line-height: 1;
+        color: white;
+        font-weight: 300;
+        width: 150px;
+        margin-top: 6px;
+      }
     }
   }
-}
 
   // CAROUSEL TABLET VIEW
   .image {
@@ -574,6 +579,8 @@
       border: 0px;
     }
   }
+
+  // RECIPE BOX TABLET VIEW
   .Recipe_box {
     margin: 10px 30px 10px 30px;
     .box {
@@ -593,8 +600,6 @@
       margin: 9px 7px 7px 7px;
     }
   }
-
-  // RECIPE BOX TABLET VIEW
 
   // ABOUT US TABLET VIEW
   .about_us {
@@ -744,6 +749,65 @@
   }
 }
 
-// STYLING FOR MOBILE VIEW
-@media screen and (max-width: 320px) {
+// ALL SIZE NAVBAR
+@media screen and (max-width: 620px) {
+  // NAVBAR
+  .nav {
+    padding: 10px 10px;
+    .navlinks {
+      position: static;
+      display: none;
+      border-bottom: 1px solid rgb(206, 206, 206);
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #f9f9f9;
+      border-top: 1px solid #ccc;
+      padding-top: 10px;
+      transition: all 0.5s ease;
+      &.show {
+        display: flex;
+      }
+    }
+    .navbrand img {
+      width: 115px;
+    }
+    .navlinks .links {
+      text-decoration: none;
+      color: #253d4e;
+      font-size: 12px;
+      margin-bottom: 5px;
+    }
+    .navlinks .selected {
+      margin-bottom: 5px;
+      font-size: 12px;
+    }
+    .toggleBtn {
+      display: block;
+      font-size: 13px;
+      color: #253d4e;
+      font-weight: 600;
+    }
+  }
+}
+
+@media screen and (max-width: 620px) {
+  // STYLING FOR MOBILE VIEW
+
+  // FOOTER MOBILE VIEW
+
+  // CAROUSEL MOBILE VIEW
+
+  // FILTER CATEGORY MOBILE VIEW
+
+  // RECIPE BOX MOBILE VIEW
+
+  // ABOUT US MOBILE VIEW
+
+  // CONTACT US MOBILE VIEW
+
+  // VIEWPAGE MOBILE VIEW
 }

@@ -1,10 +1,17 @@
 import Link from "next/link";
 import Head from "next/head";
+import Image from "next/image";
 import { useRouter } from "next/router";
+import { useState } from "react";
 import styles from "@/styles/style.module.scss";
 
 export default function Navbar() {
   const router = useRouter();
+  const [showNavLinks, setShowNavLinks] = useState(false);
+
+  const toggleNavLinks = () => {
+    setShowNavLinks(!showNavLinks);
+  };
 
   return (
     <>
@@ -18,7 +25,9 @@ export default function Navbar() {
         <div className={styles.navbrand}>
           <img src="/logo.png" alt="" />
         </div>
-        <div className={styles.navlinks}>
+        <div
+          className={`${styles.navlinks} ${showNavLinks ? styles.show : ""}`}
+        >
           <Link
             href="../"
             className={router.pathname === "/" ? styles.selected : styles.links}
@@ -50,6 +59,12 @@ export default function Navbar() {
             Contact Us
           </Link>
         </div>
+        <button
+          className={`${styles.toggleBtn} ${showNavLinks ? styles.close : ""}`}
+          onClick={toggleNavLinks}
+        >
+          {showNavLinks ? "Close" : "Menu"}
+        </button>
       </nav>
     </>
   );
