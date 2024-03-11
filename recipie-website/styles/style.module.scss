@@ -426,6 +426,60 @@
   }
 }
 
+// 404 PAGE STYLE
+.error_page {
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  .top {
+    text-align: center;
+    border-bottom: 3px solid #06648e;
+    .image {
+      display: flex;
+      justify-content: space-around;
+      width: 100px;
+      margin: 0px auto;
+      .error {
+        font-size: 96px;
+        font-weight: 700;
+        margin-top: 50px;
+        color: black;
+        padding-bottom: 0px;
+      }
+      .chef {
+        width: 170px;
+        margin-left: -30px;
+      }
+    }
+    .text {
+      text-align: center;
+      .error_msg {
+        font-size: 17px;
+        font-weight: 700;
+      }
+    }
+  }
+  .bottom {
+    text-align: center;
+    .error_msg {
+      margin: 9px auto;
+      font-size: 11px;
+      font-weight: 500;
+      width: 300px;
+    }
+    .return_btn {
+      margin: 0 auto;
+      background-color: #06648e;
+      color: white;
+      font-size: 12px;
+      border-radius: 7px;
+      padding: 7px 30px;
+    }
+  }
+}
+
 // STYLING FOR 882px
 @media screen and (max-width: 882px) {
   .Recipe_category {
