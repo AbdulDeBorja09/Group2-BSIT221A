@@ -1,4 +1,5 @@
 import styles from "@/styles/style.module.scss";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -19,21 +20,21 @@ export default function Footer() {
         <div className={styles.col2}>
           <div className={styles.upper}>
             <h1 className={styles.title}>Navigation</h1>
-            <a href="" className={styles.link}>
+            <Link href="../" className={styles.link}>
               Home
-            </a>
-            <a href="" className={styles.link}>
+            </Link>
+            <Link href="../recipe" className={styles.link}>
               Our Recipe
-            </a>
+            </Link>
           </div>
           <div className={styles.lower}>
             <h1 className={styles.title}>Customer Service</h1>
-            <a href="" className={styles.link}>
+            <Link href="../aboutus" className={styles.link}>
               About Us
-            </a>
-            <a href="" className={styles.link}>
+            </Link>
+            <Link href="../contactus" className={styles.link}>
               Contact Us
-            </a>
+            </Link>
           </div>
         </div>
         <div className={styles.col3}>
